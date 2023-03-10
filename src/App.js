@@ -20,10 +20,10 @@ function App() {
             <div style={{color: "white", width: "300px", fontSize: "small"}}>이메일
             </div>  
             <input type="text" name="st_id2" placeholder="talmkc11@naver.com" style={{width: "300px", height: "25px", border: "5px double red"}}/>
-            <div style="color: white; width: 300px; fontSize: small;">패스워드
+            <div style={{color: "white", width: "300px", fontSize: "small"}}>패스워드
             </div>
             <input type="password" name="st_id3" placeholder="비밀번호를 6자리 이상 입력하세요." style={{width: "300px", height: "25px", border: "5px double red"}}/>
-            <div style="color: white; width: 300px; fontSize: small;">패스워드 확인
+            <div style={{color: "white", width: "300px", fontSize: "small"}}>패스워드 확인
             </div>
             <input type="password" name="st_id3" placeholder="비밀번호를 한 번 더 입력하세요." style={{ width: "300px", height: "25px", border: "5px double red"}}/>
             <button style={{backgroundColor: "white", width: "49%", height: "40px"}}>회원가입
