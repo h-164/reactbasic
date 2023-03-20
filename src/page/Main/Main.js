@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
 
-function Main() {
+const Main = () => {
+  const [variant, setVariant] = useState("");
+
+  const changeText = (event) => {
+    setVariant(event.target.value);
+  };
   return (
-    <div>Main</div>
-  )
-}
+    <div>
+      <input type="text" value={variant} onChange={changeText} />
+      <input type="text" value={variant} onChange={changeText} />
+    </div>
+  );
+};
 
-export default Main
+export default Main;
