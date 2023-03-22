@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { useNavigate} from "react-router-dom";
 
 function Register() {
 
@@ -31,12 +32,10 @@ function Register() {
   };
 
   const signUp = () => {
-    console.log(userName,userPassword);
+    navigate("/login");
   }
 
-  const cancel = () => {
-    console.log('취소');
-  }
+  const navigate = useNavigate();
 
   return (
     <div style={{width: "100%", height: "100%", margin : "0px"}}>
@@ -70,10 +69,7 @@ function Register() {
             <br></br>
             </div>
             <button onClick={signUp}
-              style={{backgroundColor: "white", width: "50%", height: "35px"}}>회원가입
-            </button>
-            <button onClick={cancel}
-              style={{backgroundColor: "white", width: "50%", height: "35px"}}>취소
+              style={{backgroundColor: "white", width: "100%", height: "35px"}}>회원가입
             </button>
         </div>
     </div>
