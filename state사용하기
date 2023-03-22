@@ -1,0 +1,23 @@
+import React,{useState} from 'react';
+
+function Main() {
+
+  let[글제목,글제목변경] = useState(['메롱롱','메롱롱롱']);
+  let posts = '메롱'
+  return (
+    <div className = "Main">
+    <div className="list">
+      <h3> { 글제목[0] } </h3>
+      <p>8월 23일</p>
+      <hr/>
+    </div>
+      <div className="list">
+      <h3> { 글제목[1] } </h3>
+      <p>8월 24일</p>
+      <hr/>
+      </div>
+    </div>
+  )
+}
+
+export default Main

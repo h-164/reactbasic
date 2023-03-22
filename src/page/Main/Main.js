@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{useState} from "react";
 
 const Main = () => {
@@ -20,5 +21,22 @@ const Main = () => {
 
 )
 }
+=======
+import React, { useState } from "react";
 
-export default Main
+const Main = () => {
+  const [variant, setVariant] = useState("");
+
+  const changeText = (event) => {
+    setVariant(event.target.value);
+  };
+  return (
+    <div>
+      <input type="text" value={variant} onChange={changeText} />
+      <input type="text" value={variant} onChange={changeText} />
+    </div>
+  );
+};
+>>>>>>> 1c0948aa8c7d18cb5987086d2fc500e9121ad601
+
+export default Main;
