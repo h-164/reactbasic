@@ -2,13 +2,7 @@ import React from "react";
 
 function Main() {
   return <div style={{ backgroundColor: "black", width: "100%", height:"100vh" }}>
-    <div style={{display:"flex", flexDirection:"row", backgroundColor: "black", width: "100%",  
-                     position: "fixed", padding: "10px 0px 10px 20px", justifyContent:"space-between"}}>
-      <div style={{fontSize: "40px",fontWeight: "bold", color: "#ECD8A4"}}>
-        GLOG
-      </div>
-      <div style={{ backgroundColor:"#D9D9D9", borderRadius:"50%", width:"30px", height:"30px"}}></div>
-    </div>
+
     <div style={{display:"flex", flexDirection:"row", width:"100%", height:"5000px"}}>
       <div style={{backgroundColor: "black", width: "210px", height:"5000px", borderRight: "1px solid white",position: "fixed"}}>
         <div style={{color:"white", fontSize:"21", padding:"90px 0px 10px 0px"}}>페이지</div>
@@ -29,7 +23,14 @@ function Main() {
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: "black", width: "900px", heiht:"40px"}}>
+      <div style={{display:"flex", flexDirection:"row", backgroundColor: "black", width: "100%",  
+                     position: "fixed", padding: "10px 0px 10px 20px", justifyContent:"space-between"}}>
+      <div style={{fontSize: "40px",fontWeight: "bold", color: "#ECD8A4"}}>
+        GLOG
+      </div>
+      <div style={{ backgroundColor:"#D9D9D9", borderRadius:"50%", width:"30px", height:"30px"}}></div>
+    </div>
+      <div style={{backgroundColor: "black", width: "900px", heiht:"40px", paddingLeft: "240px"}}>
         <div style={{color:"white", fontSize:"27px", padding: "120px 0px 20px 120px", fontWeight:"bold"}}>
           알고리즘에 대해 배워보자!
         </div>
