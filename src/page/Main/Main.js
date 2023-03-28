@@ -4,14 +4,8 @@ import { Button, Stack } from "@mui/material";
 
 function Main() {
   return (
-    <Stack style={{ backgroundColor: "black", width: "100%", height: "100vh" }}>
-      <Stack
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "100%",
-          height: "5000px",
-        }}>
+    <Stack bgColor="black" width="100%" height="100vh">
+      <Stack direction="row" width="100%" height="5000px">
         <Stack
           style={{
             backgroundColor: "black",
@@ -26,15 +20,13 @@ function Main() {
             sx={{
               ":hover": {
                 backgroundColor: "#D6D0C0",
+                color: "#ECD8A4",
+                fontWeight: "bold",
+                fontSize: "21",
+                padding: "90px 0px 10px 0px",
+                display: "flex",
+                alignItems: "center",
               },
-            }}
-            style={{
-              color: "#ECD8A4",
-              fontWeight: "bold",
-              fontSize: "21",
-              padding: "90px 0px 10px 0px",
-              display: "flex",
-              alignItems: "center",
             }}>
             CHAEYEON'S BLOG
           </Button>
