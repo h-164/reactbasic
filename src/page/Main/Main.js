@@ -1,18 +1,18 @@
 import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
-import { Button } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 
 function Main() {
   return (
-    <div style={{ backgroundColor: "black", width: "100%", height: "100vh" }}>
-      <div
+    <Stack style={{ backgroundColor: "black", width: "100%", height: "100vh" }}>
+      <Stack
         style={{
           display: "flex",
           flexDirection: "row",
           width: "100%",
           height: "5000px",
         }}>
-        <div
+        <Stack
           style={{
             backgroundColor: "black",
             width: "210px",
@@ -38,61 +38,61 @@ function Main() {
             }}>
             CHAEYEON'S BLOG
           </Button>
-          <div
+          <Stack
             style={{
               color: "white",
               fontSize: "21",
               padding: "0px 0px 10px 0px",
             }}>
             페이지
-          </div>
-          <div>
-            <div
+          </Stack>
+          <Stack>
+            <Stack
               style={{
                 fontSize: "18px",
                 color: "#ECD8A4",
                 paddingBottom: "10px",
               }}>
               ● 파이썬
-            </div>
-            <div>
-              <div
+            </Stack>
+            <Stack>
+              <Stack
                 style={{
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
                   color: "#ECD8A4",
                 }}>
                 - 알고리즘
-              </div>
-              <div
+              </Stack>
+              <Stack
                 style={{
                   color: "white",
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
                 }}>
                 - ML
-              </div>
-              <div
+              </Stack>
+              <Stack
                 style={{
                   color: "white",
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
                 }}>
                 - 데이터분석
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
+              </Stack>
+            </Stack>
+          </Stack>
+          <Stack>
+            <Stack
               style={{
                 fontSize: "18px",
                 color: "white",
                 padding: "25px 0px 10px 0px",
               }}>
               ● 프론트엔드
-            </div>
-            <div>
-              <div
+            </Stack>
+            <Stack>
+              <Stack
                 style={{
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
@@ -100,27 +100,27 @@ function Main() {
                   color: "white",
                 }}>
                 - HTML
-              </div>
-              <div
+              </Stack>
+              <Stack
                 style={{
                   color: "white",
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
                 }}>
                 - CSS
-              </div>
-              <div
+              </Stack>
+              <Stack
                 style={{
                   color: "white",
                   fontSize: "16px",
                   padding: "0px 0px 5px 20px",
                 }}>
                 - javascript
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
+              </Stack>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Stack
           style={{
             display: "flex",
             flexDirection: "row",
@@ -130,26 +130,26 @@ function Main() {
             padding: "10px 0px 10px 20px",
             justifyContent: "space-between",
           }}>
-          <div
+          <Stack
             style={{ fontSize: "40px", fontWeight: "bold", color: "#ECD8A4" }}>
             GLOG
-          </div>
-          <div
+          </Stack>
+          <Stack
             style={{
               backgroundColor: "#D9D9D9",
               borderRadius: "50%",
               width: "30px",
               height: "30px",
-            }}></div>
-        </div>
-        <div
+            }}></Stack>
+        </Stack>
+        <Stack
           style={{
             backgroundColor: "black",
             width: "900px",
             heiht: "40px",
             paddingLeft: "240px",
           }}>
-          <div
+          <Stack
             style={{
               color: "white",
               fontSize: "27px",
@@ -157,9 +157,9 @@ function Main() {
               fontWeight: "bold",
             }}>
             알고리즘에 대해 배워보자!
-          </div>
-          <div>
-            <div
+          </Stack>
+          <Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "23px",
@@ -167,16 +167,16 @@ function Main() {
                 padding: " 20px 0px 0px 120px",
               }}>
               알고리즘
-            </div>
-            <div
+            </Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "15px",
                 padding: " 0px 0px 0px 120px",
               }}>
               알고리즘은 신기하다.
-            </div>
-            <div
+            </Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "20px",
@@ -184,16 +184,16 @@ function Main() {
                 padding: " 20px 0px 0px 120px",
               }}>
               알고리즘이 신기한 이유?
-            </div>
-            <div
+            </Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "15px",
                 padding: " 0px 0px 0px 120px",
               }}>
               모르겠다.
-            </div>
-            <div
+            </Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "20px",
@@ -201,26 +201,26 @@ function Main() {
                 padding: " 20px 0px 0px 120px",
               }}>
               알고리즘이 안신기해지려면?
-            </div>
-            <div
+            </Stack>
+            <Stack
               style={{
                 color: "white",
                 fontSize: "15px",
                 padding: " 0px 0px 0px 120px",
               }}>
               모르겠다.
-            </div>
-          </div>
-        </div>
-        <div
+            </Stack>
+          </Stack>
+        </Stack>
+        <Stack
           style={{ backgroundColor: "black", width: "500px", heiht: "800px" }}>
-          <div
+          <Stack
             style={{
               margin: "250px 0px 0px 0px",
               height: "120px",
               borderLeft: "1px solid white",
             }}>
-            <div
+            <Stack
               style={{
                 fontSize: "18px",
                 color: "white",
@@ -228,30 +228,30 @@ function Main() {
                 padding: "0px 0px 0px 15px",
               }}>
               ● 알고리즘
-            </div>
-            <div style={{}}>
-              <div
+            </Stack>
+            <Stack style={{}}>
+              <Stack
                 style={{
                   color: "#ECD8A4",
                   fontSize: "16px",
                   padding: "10px 0px 0px 30px",
                 }}>
                 - 알고리즘이 신기한 이유?
-              </div>
-              <div
+              </Stack>
+              <Stack
                 style={{
                   color: "white",
                   fontSize: "16px",
                   padding: "10px 0px 0px 30px",
                 }}>
                 - 알고리즘이 안신기해지려면?
-              </div>
-            </div>
-          </div>
-          <div></div>
-        </div>
-      </div>
-    </div>
+              </Stack>
+            </Stack>
+          </Stack>
+          <Stack></Stack>
+        </Stack>
+      </Stack>
+    </Stack>
   );
 }
 
