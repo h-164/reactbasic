@@ -11,7 +11,109 @@ const Main = () => {
     setAge(event.target.value);
   };
 
-const Array = ["recent", "like", "comment", "click", "sinddong"]
+  const array = [
+    {
+      class: "recent",
+      card: [
+        {
+          title: "제목",
+          content: "내용",
+        },
+        {
+          title: "제목2",
+          content: "내용2",
+        },
+        {
+          title: "제목3",
+          content: "내용3",
+        },
+        {
+          title: "제목4",
+          content: "내용4",
+        },
+        {
+          title: "제목5",
+          content: "내용5",
+        },
+      ],
+    },
+    {
+      class: "like",
+      card: [
+        {
+          title: "제목",
+          content: "내용",
+        },
+        {
+          title: "제목2",
+          content: "내용2",
+        },
+        {
+          title: "제목3",
+          content: "내용3",
+        },
+        {
+          title: "제목4",
+          content: "내용4",
+        },
+        {
+          title: "제목5",
+          content: "내용5",
+        },
+      ],
+    },
+    {
+      class: "comment",
+      card: [
+        {
+          title: "제목",
+          content: "내용",
+        },
+        {
+          title: "제목2",
+          content: "내용2",
+        },
+        {
+          title: "제목3",
+          content: "내용3",
+        },
+        {
+          title: "제목4",
+          content: "내용4",
+        },
+        {
+          title: "제목5",
+          content: "내용5",
+        },
+      ],
+    },
+    {
+      class: "click",
+      card: [
+        {
+          title: "제목",
+          content: "내용",
+        },
+        {
+          title: "제목2",
+          content: "내용2",
+        },
+        {
+          title: "제목3",
+          content: "내용3",
+        },
+        {
+          title: "제목4",
+          content: "내용4",
+        },
+        {
+          title: "제목5",
+          content: "내용5",
+        },
+      ],
+    },
+  ];
+  //const Array = ["recent", "like", "comment", "click", "sinddong"]
 
   return (
     <Stack height="100%">
@@ -19,8 +121,11 @@ const Array = ["recent", "like", "comment", "click", "sinddong"]
       <Stack
         spacing={10}
         height="5000px"
+        minWidth="100%"
+        width="min-content"
         bgcolor="black"
-        padding="125px 96px 40px 96px">
+        padding="125px 96px 40px 96px"
+      >
         <Stack direction="row" spacing={4} justifyContent="center">
           <Select
             value={age}
@@ -42,7 +147,8 @@ const Array = ["recent", "like", "comment", "click", "sinddong"]
                   },
                 },
               },
-            }}>
+            }}
+          >
             <MenuItem value={10}>태그</MenuItem>
             <MenuItem value={20}>작성자</MenuItem>
             <MenuItem value={30}>내용</MenuItem>
@@ -70,28 +176,34 @@ const Array = ["recent", "like", "comment", "click", "sinddong"]
             }}
           />
         </Stack>
-        {Array.map((sudol,index)=>{
-                return(
-                <Stack spacing={4} direction="row">
+        {array.map((sudol, index) => {
+          return (
+            <Stack>
+              <Stack color="white">{sudol.class}</Stack>
+              <Stack spacing={4} direction="row">
                 <IconButton>
-                <ChevronLeftIcon />
+                  <ChevronLeftIcon />
                 </IconButton>
-                <Stack width="300px" height="200px" bgcolor="pink" />
-                <Stack width="300px" height="200px" bgcolor="orange" />
-                <Stack width="300px" height="200px" bgcolor="yellow" />
-                <Stack width="300px" height="200px" bgcolor="green" />
-                <Stack width="300px" height="200px" bgcolor="blue" />
+                {sudol.card.map((cardContent, i) => {
+                  return (
+                    <Stack>
+                      <Stack width="300px" height="200px" bgcolor="white" />
+                      <Stack color="white">{cardContent.title}</Stack>
+                      <Stack color="white">{cardContent.content}</Stack>
+                    </Stack>
+                  );
+                })}
+
                 <IconButton>
-                <ChevronRightIcon />
+                  <ChevronRightIcon />
                 </IconButton>
-                </Stack>
-                )
-        })
-        }
+              </Stack>
+            </Stack>
+          );
+        })}
       </Stack>
     </Stack>
   );
 };
 
 export default Main;
-
